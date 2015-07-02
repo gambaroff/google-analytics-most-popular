@@ -1,0 +1,16 @@
+language: ruby
+cache: bundler
+rvm:
+- 2.1.5
+- 2.2.2
+before_install:
+- gem update --system
+- gem --version
+- gem update bundler
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: Iu+VsOaUY3SRBbDz30ROceQdhsp5VZrZ9v9Qmy1O/KVJDgODz5dJBwlbw0bUW5KL7BhyuSZfkDHA/UaZoB1/Ww/Qf+RqPIo36C0YHGktfUUs3F8iaEAkd0unTf5NcI9H+OnAFR5VqHCn5nwla+gABM7kTYy2/uIrM36XRjHF3kUhBVLELcOjr3x4P1ofJKOdLoS4IPMYc8sYT/Ai/62XVlCKjK+za4UWba2nnSWI/D6i/Hja/HUlNc1eqEaQIB9NRDhGtvv3mIfBNkdVBn+T3hk1n9Ddb07xOoPYfo8QKCMzC0vv0ayqUEEBlYYylFxXBETK3n7KB6u30/soMJNfj7ncZ8ePe1kHXS1wpd5uTI7kBFRWCwScXaEtAuMt73+3V6KHQKNXljESCAOqrIDVVHJjh8RsSVHseDpSCHEY9TsDMIUyTjIcYovRlGakWLNUmRM5yWJO19IahiGElaxG6xMywcyeRDzOVKh5XBe/pD2asa54NnyEQ62lQLm+CLv9Ma2kEAZUAjLLOXR/duaorHOeiET39QoxgVeSWqIaQFOvuHqZv9ziRRITVqOSFZD9vjdqCMm44aipgi8bbl1iLzLIQG/ceHg4C/AkLsO4xtgv/7ThARLy3Xq5XVkjp9TkMZDrE6s7K9ryB/z21XczSe4XnMRbJUWnvp2Etieyecw=
+  on:
+    tags: true

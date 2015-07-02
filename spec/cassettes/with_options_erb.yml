@@ -5,7 +5,7 @@ http_interactions:
     uri: https://accounts.google.com/o/oauth2/token
     body:
       encoding: ASCII-8BIT
-      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiI5MjMxNTMyODQ5NDgtdmxjZzNmdDVvcXNiY2k5amd2YzNwdWpjYnJscG05MWRAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzU5NjgwNDksImlhdCI6MTQzNTk2NzkyOSwic2NvcGUiOiJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL2FuYWx5dGljcy5yZWFkb25seSJ9.lfex1BNsP1pfMCMu0nk7UCAuvcWASppXnfG-5O9LkgKKteCQGhSYVOGWCMtYBXZE-u-ObujlEZaVUGCittOAVhpoAtKmP77C9Lfdb1Sg0evrQzqxY55DoyFLnK7led6gAqB70nQKrxpUFog5JNvzk8T3tJuaJjr0AWuh9RA-EWo
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIzMTcyMzgwNzI3NDMtaHR2OTY2aWE5NmlpOTVoazYxbWhxcjk4ZWR0dDJsYWRAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzU5Njc0MjMsImlhdCI6MTQzNTk2NzMwMywic2NvcGUiOiJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL2FuYWx5dGljcy5yZWFkb25seSJ9.2GaxWnTyecKbPSHAJaMASCvbq5rL2Q3teZUepetV8AE_GPvnwQFpdeZgew6qxAEO0DoH8jA8wcPwv4uwVFfNXUjktNMAaihagnwRkpH3RmydaZ-4i0v4KfhWlI7RIOadFQXmv-y_C9bY21vZlBVBI_k93rN0OYsLUicJ3r3soQM
     headers:
       Cache-Control:
       - no-store
@@ -31,7 +31,7 @@ http_interactions:
       Expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       Date:
-      - Fri, 03 Jul 2015 23:59:49 GMT
+      - Fri, 03 Jul 2015 23:49:23 GMT
       Content-Disposition:
       - attachment; filename="json.txt"; filename*=UTF-8''json.txt
       P3p:
@@ -47,7 +47,7 @@ http_interactions:
       - GSE
       Set-Cookie:
       - 
-        02-Jan-2016 23:59:49 GMT;HttpOnly
+        02-Jan-2016 23:49:23 GMT;HttpOnly
       Alternate-Protocol:
       - 443:quic,p=1
       Accept-Ranges:
@@ -60,12 +60,12 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-         "access_token" : "<%= ENV["ACESS_TOKEN"] %>",
+          "access_token" : "<%= ENV["ACESS_TOKEN"] %>",
           "token_type" : "Bearer",
           "expires_in" : 3600
         }
     http_version: 
-  recorded_at: Fri, 03 Jul 2015 23:59:49 GMT
+  recorded_at: Fri, 03 Jul 2015 23:49:23 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/analytics/v3/rest
@@ -75,7 +75,7 @@ http_interactions:
     headers:
       User-Agent:
       - |-
-        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
+        Marketplace/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
          (gzip)
       Accept-Encoding:
       - gzip
@@ -89,9 +89,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sat, 04 Jul 2015 00:04:13 GMT
+      - Fri, 03 Jul 2015 23:54:13 GMT
       Date:
-      - Fri, 03 Jul 2015 23:59:13 GMT
+      - Fri, 03 Jul 2015 23:49:13 GMT
       Etag:
       - ''
       Vary:
@@ -112,7 +112,7 @@ http_interactions:
       Server:
       - GSE
       Age:
-      - '36'
+      - '11'
       Cache-Control:
       - public, max-age=300, must-revalidate, no-transform
       Alternate-Protocol:
@@ -557,24 +557,24 @@ http_interactions:
         3q7EAgBOdNCe9BXKCQ3bje43kEZ/JaGFDpuyNYxhU47NDZeIdfqrspmv4P9/
         vPr/00/gS4hRAwA=
     http_version: 
-  recorded_at: Fri, 03 Jul 2015 23:59:50 GMT
+  recorded_at: Fri, 03 Jul 2015 23:49:24 GMT
 - request:
     method: get
-    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/story/.*&ids=ga:87888661&max-results=10&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
+    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/topics/.*&ids=ga:785845&max-results=15&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
     body:
       encoding: UTF-8
       string: ''
     headers:
       User-Agent:
       - |-
-        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
+        Marketplace/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
          (gzip)
       Accept-Encoding:
       - gzip
       Content-Type:
       - ''
       Authorization:
-      - Bearer 
+      - Bearer ya29.pQExOT9ZcqhDiPJfiT0OvI2qdwhHPxaH_LeFqu4WIb3gsdhXdEoxZdbX3P04XNNOAt_oYsSlB3lJZw
       Cache-Control:
       - no-store
       Accept:
@@ -585,9 +585,90 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Fri, 03 Jul 2015 23:59:50 GMT
+      - Fri, 03 Jul 2015 23:49:24 GMT
       Date:
-      - Fri, 03 Jul 2015 23:59:50 GMT
+      - Fri, 03 Jul 2015 23:49:24 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"o-85COrcxoYkAw5itMLG4AKNpMY/idZIA6osUzuKLDepg5IPMU-oMSw"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAN1U227jNhD9FxWbhyKM4tiyvQaMYtGk2wBNNkhS7EOQAiNp
+        LLOmSJWkrGiD7Lf3UIrjVTbtB+wLAQ45Z+acuTxGG6nzaBGRJtV6mbmfCjol
+        T9FhJIN97X3lFnHcNM1RYUyhmCrpjjJTxi8u8XYc5/CJC/pF5m5Z0GI2T+aT
+        5CCXJWsnje6MFRV8RX59ULK38NvZtpIbd+CM9UsxMK2k8mwHvu/Gp1/fJWex
+        N1WIfPTzgfNkvUB8Xrbs8D+n9oB13pu8CdeSHoRlVyvvlqME3P6p2bbR4jHa
+        e4Psiz9+7BBg7jA6QRxuL+xg2fPrH3ZZ4umZY7S4i77lFN0fRoFpsIvXD898
+        h1jLr3/t2QK4zxhV44doMUKgPTfckyfk6bl0V2yvgBBMh2DgSV3vPk2SZAIc
+        Vqs/pN78uEXW/OB/KIbflH45mn5PuLIGsfhcr0zo7d01zPFLy1KWmVr7zjiZ
+        T2fz9zA2nF5ZU7H1bffw5wfRv4lR6HuNdKDS51e/5sez8fvJPu4llWFcLshu
+        2FeKMj4ytsC7p/Q5jf3woE8zoz1J7W6orBTn3dpZrEg5Dm+qLvXvTHk3EHeP
+        ke7Rh1PWf7ttq/B0en5xdnlz/ukyTCbAns03t9fnlx8R8DVGP3evQC7O8P3X
+        IcL55e3Zx7Pr6On+eZTcb8Z+UPuJehxCLqLxLJmcBI7WhPvdXbQrdWOsyuOV
+        osKtZSUa1LpAhUVJSqGakFc7sWHdhhU8mk/nWAx77zWT8muRkeWYlfxCKeO6
+        NqpkJ3IuTWbJyy9SF6LkXGakhEcE3Hu00QAtrZ3U7Fxc1UgGPillG0FFKIoX
+        mhvR0JZFJS1lYQGOxsl0AND06VRmG5oiroyxIsfhBD/IHqE1dhNcj0/Gb8de
+        SbSW0MYzbCkaRTSWKkEp6dzokJX0TjhZaPK1RTamAt58PBSml7WwzBsnMiud
+        dDFaJIjJOdbgYTSbzf8v91QF7qbRnEMGDRRoLPI2JLBmjJlo1i1SQaF8t6QP
+        o2Q8GyAyGtqUbVzuB0CcJHGGpKpWcMu9vrlRiqxIJQrOD/gGHXLATTCKA7i8
+        zlBMo+M6JFO2aI/M1kGNFiMMXbQ2W/KmS2YyG/+HN3ad7XTMarvlGCOArUVa
+        OF/nrIGGpspFwbYk3YoVshWYCMWdapPp8ZscJfqCVEMtdDFYSJbzOAgURPNB
+        L+GMWKH+Jx3RLsNk/ibU3yZ1oFZhcUJjEwDtJuTbXdAYwXcy9PWcrVHBPkyo
+        YJBElIjEWkvq4x1P32gRaAn6LApMJsqIDtce5D3UScPIjV8R7iKl0mdGamFW
+        q+CjjWByKKnLqApQzFkQa5ygBvdP/wIU3gujVQkAAA==
+    http_version: 
+  recorded_at: Fri, 03 Jul 2015 23:49:24 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/topics/.*&ids=ga:785845&max-results=15&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - |-
+        Marketplace/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
+         (gzip)
+      Accept-Encoding:
+      - gzip
+      Content-Type:
+      - ''
+      Authorization:
+      - Bearer ya29.pQExOT9ZcqhDiPJfiT0OvI2qdwhHPxaH_LeFqu4WIb3gsdhXdEoxZdbX3P04XNNOAt_oYsSlB3lJZw
+      Cache-Control:
+      - no-store
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 03 Jul 2015 23:49:25 GMT
+      Date:
+      - Fri, 03 Jul 2015 23:49:25 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -614,333 +695,29 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAAN1U227bOBD9lYCL+mERhrrYlmzAKIrGbQ003iBJERSBd0GL
-        I5spRXpJOo4QpN++Q/kS28nLvuZFAIdzzszhnNET+SW1IH3CNVe1l4X7Y8bP
-        uefklMgQn3u/cH3GVqvV2cyYmQK+kO6sMBXbQdhDygRi2Ix/lMINZryfZ3me
-        d7txS8gKtJNGN+EFn8El9/NWBd4icht7kLByLWesH9CDUCmVB3uA/ZCe//7Q
-        GTLnja3Z2Z8t57n1FBuAQQ0O0wWvW6DFOuRNOFb8kVpwS+XdII5Q3L9LsDXp
-        P5EXNKrd4TFjy4DhhqN5EYenPXkYexG4vtq2iVcbkaR/R/ZFkckpCVJDnB5f
-        bAQfcg1+/72Ti7zrlnFu8Ej6MdZ5EYfn6Bkb9VC5S7CXSBBCpyjBc3W1S0ra
-        SAOq/C71r3c8ZQ2P/n1J3Jv9II5fK15Yg6VgpEsT3L09hlXeMy0vCrPUvgn3
-        0jTJoy5GVzC9tGYB1tfNzY9PdHNJ44CSGnvCt7o9ysvbWZ71OvlL+TGvwt78
-        NEv7WXHnZMHVCT35pNQJgh3a82Tzk/F8umlvf63QwoXRnkvtrnm1UCCa9H7J
-        lYNwp5aV/gZcNKty90T0uuDh/q3TbupFuDofXQzH16O/xmFnkWwTvr65Go2/
-        YsFjjvVGHpFcDDH98yHDaHwz/Dq8Is+TzZa5L8ai0t2yPR1S9knWSYJCa8Lp
-        7o5sHJBEcYdFXZZGzM+BOo4PQEugAhw+NS3mxnIFFB4LtXTyAbCNNs5lcnrE
-        kLEoZgKmS+dqREklLDqXFsZqsB9vb86q4h8pBnmvLKM0T7Jet5e2BZ+WWS9O
-        RWfKk6xIkkCf5K/ZuyyOWYUNFLQ0Fs3HhdSzkNz9n60gJn4DgwUiVqM9ZxSt
-        Ll1we/C4FKALoLUx9xi4503RuPOaIGVxxlagcLWBeoOIpS22LgyY9ltFk5Td
-        owEcnTfN0YXiGmhhuQtWwt16A4OTWuGiUlFjMvWIFM5o2uxJGDYCe28KzNic
-        4woril8657XQ1JlCgsdXAgVTiwvvaBJFtAZugw2PJ9EOj5u02U4YXc+kwIF4
-        NAdFDqkRmJHJ5Pk/nXIYe+cHAAA=
+        H4sIAAAAAAAAAN1U0W7jNhD8FxWXhyKM4tiyHQNGcWjSa4AmFyQp+hCkwEpa
+        y6wpUiUpK7og9+0dSnF8yt31A+5FAJfa2ZnZXT5FG6nzaBGRJtV6mbmfCjoj
+        T9FhJEN87X3lFnHcNM1RYUyhmCrpjjJTxq8p8XYc58iJC/pF5m5Z0GI2T+aT
+        5CCXJWsnje6CFRV8TX59ULK3yNvFtpIbd+CM9UsxCK2k8mwHue/GZ5/fJeex
+        N1WofPTzgfNkvUB9Xrbs8H9O7QHrvA95E44lPQrLrlbeLUcJtP1bs22jxVO0
+        z4bY13z8sUNAuMPoDHE4vapDZK+vv9ixxNWLxmhxH32pKXo4jILSEBdvL170
+        DrGWn//eqwVwzxhd48doMUKhvTack2fw9Fy6a7bXQAihQyjwpG52P02SKfIc
+        q9UfUm9+3CZrfvQ/lMIvWr8cTb8WXFmDWnyhVybM9u4Y9vh1ZCnLTK19F5zM
+        p7P5KYINp9fWVGx92138+V70d2IU5l6DDlz6681f8+PZ+HSyr3tFZViXS7Ib
+        9pWijI+MLXDvKX2hsV8ezGlmtCep3S2VleK8e3YWK1KOw52qS/07U94txP1T
+        pHv04Zb1v921Vbg6u7g8v7q9+HgVNhNgL+Hbu5uLqw8o+Baj37s3IJfn+P3X
+        IcLF1d35h/Ob6PnhZZXcb8a+V/uNehpCLqLxbJqMgkZrwvn+Ptq1ujFW5fFK
+        UeHWshINel2gw6IkpdBN2Kud2LBuwxM8mk/neBj22Wsm5dciI8sxK/mJUsZx
+        bVTJTuRcmsySl5+kLkTJucxICY8KOPdo4wFaWjup2bm4qkEGOSllG0FFaIoX
+        mhvR0JZFJS1l4QEcjZMhnaanU5ltGIq4MsaKHB8n+FH2CK2xm5B6fPKd2iuJ
+        0RLaeEYsxaCIxlIlKCWdGx1YSe+Ek4UmX1uwMRXw5pPjIZPO1sIyb5zIrHTS
+        xRiRYCbneAYPo9nsf7mnKmg3jeYcNmigwGORt4HAmrFmolm3oIJG+e6RPoyS
+        8RCRMdCmbONyvwDiJIkzkKpawS33/uZGKbIilWg4P+I3+JADbnI6lMR5naGZ
+        Rsd1IFO2GI/M1sGNFisMX7Q2W/KmIzOZTb6TjbfOdj5mtd1yjBXAq0VaOF/n
+        rIGGocpFwbYk3YoV2ApshOLOtcmbkdlplJgLUg218MXgQbKcx8GgYJoPfgln
+        xAr9P+mEdgyT029C/WNSB2kVHk54bAKg3QS+3QGDEXInQ6s9Z2t0sC8TOhgs
+        ESUqsdaS+nrH02+MCLyEfBYFNhNtxIRrD/Ee7qRh5cbT468rpdJnRmphVquQ
+        o41gcmipy6gKUMxZMGucwKyH5/8AFHNhqVUJAAA=
     http_version: 
-  recorded_at: Fri, 03 Jul 2015 23:59:50 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/story/.*&ids=ga:87888661&max-results=10&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
-         (gzip)
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer 
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Fri, 03 Jul 2015 23:59:50 GMT
-      Date:
-      - Fri, 03 Jul 2015 23:59:50 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Etag:
-      - ''
-      Vary:
-      - Origin
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Encoding:
-      - gzip
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=1
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAN1U227bOBD9lYCL+mERhrrYlmzAKIrGbQ003iBJERSBd0GL
-        I5spRXpJOo4QpN++Q/kS28nLvuZFAIdzzszhnNET+SW1IH3CNVe1l4X7Y8bP
-        uefklMgQn3u/cH3GVqvV2cyYmQK+kO6sMBXbQdhDygRi2Ix/lMINZryfZ3me
-        d7txS8gKtJNGN+EFn8El9/NWBd4icht7kLByLWesH9CDUCmVB3uA/ZCe//7Q
-        GTLnja3Z2Z8t57n1FBuAQQ0O0wWvW6DFOuRNOFb8kVpwS+XdII5Q3L9LsDXp
-        P5EXNKrd4TFjy4DhhqN5EYenPXkYexG4vtq2iVcbkaR/R/ZFkckpCVJDnB5f
-        bAQfcg1+/72Ti7zrlnFu8Ej6MdZ5EYfn6Bkb9VC5S7CXSBBCpyjBc3W1S0ra
-        SAOq/C71r3c8ZQ2P/n1J3Jv9II5fK15Yg6VgpEsT3L09hlXeMy0vCrPUvgn3
-        0jTJoy5GVzC9tGYB1tfNzY9PdHNJ44CSGnvCt7o9ysvbWZ71OvlL+TGvwt78
-        NEv7WXHnZMHVCT35pNQJgh3a82Tzk/F8umlvf63QwoXRnkvtrnm1UCCa9H7J
-        lYNwp5aV/gZcNKty90T0uuDh/q3TbupFuDofXQzH16O/xmFnkWwTvr65Go2/
-        YsFjjvVGHpFcDDH98yHDaHwz/Dq8Is+TzZa5L8ai0t2yPR1S9knWSYJCa8Lp
-        7o5sHJBEcYdFXZZGzM+BOo4PQEugAhw+NS3mxnIFFB4LtXTyAbCNNs5lcnrE
-        kLEoZgKmS+dqREklLDqXFsZqsB9vb86q4h8pBnmvLKM0T7Jet5e2BZ+WWS9O
-        RWfKk6xIkkCf5K/ZuyyOWYUNFLQ0Fs3HhdSzkNz9n60gJn4DgwUiVqM9ZxSt
-        Ll1we/C4FKALoLUx9xi4503RuPOaIGVxxlagcLWBeoOIpS22LgyY9ltFk5Td
-        owEcnTfN0YXiGmhhuQtWwt16A4OTWuGiUlFjMvWIFM5o2uxJGDYCe28KzNic
-        4woril8657XQ1JlCgsdXAgVTiwvvaBJFtAZugw2PJ9EOj5u02U4YXc+kwIF4
-        NAdFDqkRmJHJ5Pk/nXIYe+cHAAA=
-    http_version: 
-  recorded_at: Fri, 03 Jul 2015 23:59:50 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/story/.*&ids=ga:87888661&max-results=10&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
-         (gzip)
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer 
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Fri, 03 Jul 2015 23:59:51 GMT
-      Date:
-      - Fri, 03 Jul 2015 23:59:51 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Etag:
-      - ''
-      Vary:
-      - Origin
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Encoding:
-      - gzip
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=1
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAN1U227bOBD9lYCL+mERhrrYlmzAKIrGbQ003iBJERSBd0GL
-        I5spRXpJOo4QpN++Q/kS28nLvuZFAIdzzszhnNET+SW1IH3CNVe1l4X7Y8bP
-        uefklMgQn3u/cH3GVqvV2cyYmQK+kO6sMBXbQdhDygRi2Ix/lMINZryfZ3me
-        d7txS8gKtJNGN+EFn8El9/NWBd4icht7kLByLWesH9CDUCmVB3uA/ZCe//7Q
-        GTLnja3Z2Z8t57n1FBuAQQ0O0wWvW6DFOuRNOFb8kVpwS+XdII5Q3L9LsDXp
-        P5EXNKrd4TFjy4DhhqN5EYenPXkYexG4vtq2iVcbkaR/R/ZFkckpCVJDnB5f
-        bAQfcg1+/72Ti7zrlnFu8Ej6MdZ5EYfn6Bkb9VC5S7CXSBBCpyjBc3W1S0ra
-        SAOq/C71r3c8ZQ2P/n1J3Jv9II5fK15Yg6VgpEsT3L09hlXeMy0vCrPUvgn3
-        0jTJoy5GVzC9tGYB1tfNzY9PdHNJ44CSGnvCt7o9ysvbWZ71OvlL+TGvwt78
-        NEv7WXHnZMHVCT35pNQJgh3a82Tzk/F8umlvf63QwoXRnkvtrnm1UCCa9H7J
-        lYNwp5aV/gZcNKty90T0uuDh/q3TbupFuDofXQzH16O/xmFnkWwTvr65Go2/
-        YsFjjvVGHpFcDDH98yHDaHwz/Dq8Is+TzZa5L8ai0t2yPR1S9knWSYJCa8Lp
-        7o5sHJBEcYdFXZZGzM+BOo4PQEugAhw+NS3mxnIFFB4LtXTyAbCNNs5lcnrE
-        kLEoZgKmS+dqREklLDqXFsZqsB9vb86q4h8pBnmvLKM0T7Jet5e2BZ+WWS9O
-        RWfKk6xIkkCf5K/ZuyyOWYUNFLQ0Fs3HhdSzkNz9n60gJn4DgwUiVqM9ZxSt
-        Ll1we/C4FKALoLUx9xi4503RuPOaIGVxxlagcLWBeoOIpS22LgyY9ltFk5Td
-        owEcnTfN0YXiGmhhuQtWwt16A4OTWuGiUlFjMvWIFM5o2uxJGDYCe28KzNic
-        4woril8657XQ1JlCgsdXAgVTiwvvaBJFtAZugw2PJ9EOj5u02U4YXc+kwIF4
-        NAdFDqkRmJHJ5Pk/nXIYe+cHAAA=
-    http_version: 
-  recorded_at: Fri, 03 Jul 2015 23:59:51 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/story/.*&ids=ga:87888661&max-results=10&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
-         (gzip)
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer 
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Fri, 03 Jul 2015 23:59:51 GMT
-      Date:
-      - Fri, 03 Jul 2015 23:59:51 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Etag:
-      - ''
-      Vary:
-      - Origin
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Encoding:
-      - gzip
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=1
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAN1U227bOBD9lYCL+mERhrrYlmzAKIrGbQ003iBJERSBd0GL
-        I5spRXpJOo4QpN++Q/kS28nLvuZFAIdzzszhnNET+SW1IH3CNVe1l4X7Y8bP
-        uefklMgQn3u/cH3GVqvV2cyYmQK+kO6sMBXbQdhDygRi2Ix/lMINZryfZ3me
-        d7txS8gKtJNGN+EFn8El9/NWBd4icht7kLByLWesH9CDUCmVB3uA/ZCe//7Q
-        GTLnja3Z2Z8t57n1FBuAQQ0O0wWvW6DFOuRNOFb8kVpwS+XdII5Q3L9LsDXp
-        P5EXNKrd4TFjy4DhhqN5EYenPXkYexG4vtq2iVcbkaR/R/ZFkckpCVJDnB5f
-        bAQfcg1+/72Ti7zrlnFu8Ej6MdZ5EYfn6Bkb9VC5S7CXSBBCpyjBc3W1S0ra
-        SAOq/C71r3c8ZQ2P/n1J3Jv9II5fK15Yg6VgpEsT3L09hlXeMy0vCrPUvgn3
-        0jTJoy5GVzC9tGYB1tfNzY9PdHNJ44CSGnvCt7o9ysvbWZ71OvlL+TGvwt78
-        NEv7WXHnZMHVCT35pNQJgh3a82Tzk/F8umlvf63QwoXRnkvtrnm1UCCa9H7J
-        lYNwp5aV/gZcNKty90T0uuDh/q3TbupFuDofXQzH16O/xmFnkWwTvr65Go2/
-        YsFjjvVGHpFcDDH98yHDaHwz/Dq8Is+TzZa5L8ai0t2yPR1S9knWSYJCa8Lp
-        7o5sHJBEcYdFXZZGzM+BOo4PQEugAhw+NS3mxnIFFB4LtXTyAbCNNs5lcnrE
-        kLEoZgKmS+dqREklLDqXFsZqsB9vb86q4h8pBnmvLKM0T7Jet5e2BZ+WWS9O
-        RWfKk6xIkkCf5K/ZuyyOWYUNFLQ0Fs3HhdSzkNz9n60gJn4DgwUiVqM9ZxSt
-        Ll1we/C4FKALoLUx9xi4503RuPOaIGVxxlagcLWBeoOIpS22LgyY9ltFk5Td
-        owEcnTfN0YXiGmhhuQtWwt16A4OTWuGiUlFjMvWIFM5o2uxJGDYCe28KzNic
-        4woril8657XQ1JlCgsdXAgVTiwvvaBJFtAZugw2PJ9EOj5u02U4YXc+kwIF4
-        NAdFDqkRmJHJ5Pk/nXIYe+cHAAA=
-    http_version: 
-  recorded_at: Fri, 03 Jul 2015 23:59:51 GMT
-- request:
-    method: get
-    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/story/.*&ids=ga:87888661&max-results=10&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - |-
-        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
-         (gzip)
-      Accept-Encoding:
-      - gzip
-      Content-Type:
-      - ''
-      Authorization:
-      - Bearer 
-      Cache-Control:
-      - no-store
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Fri, 03 Jul 2015 23:59:52 GMT
-      Date:
-      - Fri, 03 Jul 2015 23:59:52 GMT
-      Cache-Control:
-      - private, max-age=0, must-revalidate, no-transform
-      Etag:
-      - ''
-      Vary:
-      - Origin
-      - X-Origin
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Encoding:
-      - gzip
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Server:
-      - GSE
-      Alternate-Protocol:
-      - 443:quic,p=1
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAN1U227bOBD9lYCL+mERhrrYlmzAKIrGbQ003iBJERSBd0GL
-        I5spRXpJOo4QpN++Q/kS28nLvuZFAIdzzszhnNET+SW1IH3CNVe1l4X7Y8bP
-        uefklMgQn3u/cH3GVqvV2cyYmQK+kO6sMBXbQdhDygRi2Ix/lMINZryfZ3me
-        d7txS8gKtJNGN+EFn8El9/NWBd4icht7kLByLWesH9CDUCmVB3uA/ZCe//7Q
-        GTLnja3Z2Z8t57n1FBuAQQ0O0wWvW6DFOuRNOFb8kVpwS+XdII5Q3L9LsDXp
-        P5EXNKrd4TFjy4DhhqN5EYenPXkYexG4vtq2iVcbkaR/R/ZFkckpCVJDnB5f
-        bAQfcg1+/72Ti7zrlnFu8Ej6MdZ5EYfn6Bkb9VC5S7CXSBBCpyjBc3W1S0ra
-        SAOq/C71r3c8ZQ2P/n1J3Jv9II5fK15Yg6VgpEsT3L09hlXeMy0vCrPUvgn3
-        0jTJoy5GVzC9tGYB1tfNzY9PdHNJ44CSGnvCt7o9ysvbWZ71OvlL+TGvwt78
-        NEv7WXHnZMHVCT35pNQJgh3a82Tzk/F8umlvf63QwoXRnkvtrnm1UCCa9H7J
-        lYNwp5aV/gZcNKty90T0uuDh/q3TbupFuDofXQzH16O/xmFnkWwTvr65Go2/
-        YsFjjvVGHpFcDDH98yHDaHwz/Dq8Is+TzZa5L8ai0t2yPR1S9knWSYJCa8Lp
-        7o5sHJBEcYdFXZZGzM+BOo4PQEugAhw+NS3mxnIFFB4LtXTyAbCNNs5lcnrE
-        kLEoZgKmS+dqREklLDqXFsZqsB9vb86q4h8pBnmvLKM0T7Jet5e2BZ+WWS9O
-        RWfKk6xIkkCf5K/ZuyyOWYUNFLQ0Fs3HhdSzkNz9n60gJn4DgwUiVqM9ZxSt
-        Ll1we/C4FKALoLUx9xi4503RuPOaIGVxxlagcLWBeoOIpS22LgyY9ltFk5Td
-        owEcnTfN0YXiGmhhuQtWwt16A4OTWuGiUlFjMvWIFM5o2uxJGDYCe28KzNic
-        4woril8657XQ1JlCgsdXAgVTiwvvaBJFtAZugw2PJ9EOj5u02U4YXc+kwIF4
-        NAdFDqkRmJHJ5Pk/nXIYe+cHAAA=
-    http_version: 
-  recorded_at: Fri, 03 Jul 2015 23:59:52 GMT
+  recorded_at: Fri, 03 Jul 2015 23:49:26 GMT
 recorded_with: VCR 2.9.3

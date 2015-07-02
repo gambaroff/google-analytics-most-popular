@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.google.com/o/oauth2/token
+    body:
+      encoding: ASCII-8BIT
+      string: grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiI5MjMxNTMyODQ5NDgtdmxjZzNmdDVvcXNiY2k5amd2YzNwdWpjYnJscG05MWRAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE0MzU4MTQzMzYsImlhdCI6MTQzNTgxNDIxNiwic2NvcGUiOiJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL2FuYWx5dGljcy5yZWFkb25seSJ9.X13w7Q1wMmhetq72XcnhbA4xeInSubHq2yXsPSW2R18lYHMf_1HuBOZcLwWIuu8GwkiKQZvC3IpGVONzS82-o8HyQrnOFASA0ms42U0NBHbpCNA7lAGLjSSNhucirGD4GtENtXWBP-2U0wP7MwZogrZET0Qov5M4KGNfOu_iY2A
+    headers:
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers: {}
+    body:
+      encoding: UTF-8
+      string: body here
+    http_version: 
+  recorded_at: Thu, 02 Jul 2015 05:17:57 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/discovery/v1/apis/analytics/v3/rest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - |-
+        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
+         (gzip)
+      Accept-Encoding:
+      - gzip
+      Content-Type:
+      - ''
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers: {}
+    body:
+      encoding: UTF-8
+      string: body here
+    http_version: 
+  recorded_at: Thu, 02 Jul 2015 05:17:57 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/story/.*&ids=ga:87888661&max-results=15&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - |-
+        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
+         (gzip)
+      Accept-Encoding:
+      - gzip
+      Content-Type:
+      - ''
+      Cache-Control:
+      - no-store
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers: {}
+    body:
+      encoding: UTF-8
+      string: body here
+    http_version: 
+  recorded_at: Thu, 02 Jul 2015 05:17:58 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/analytics/v3/data/ga?dimensions=ga:pagePath&end-date=today&filters=ga:pagePath=~%5E/story/.*&ids=ga:87888661&max-results=15&metrics=ga:pageviews&sort=-ga:pageviews&start-date=yesterday
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - |-
+        YourClassical/1.0.0 google-api-ruby-client/0.8.6 Mac OS X/10.10.3
+         (gzip)
+      Accept-Encoding:
+      - gzip
+      Content-Type:
+      - ''
+      Cache-Control:
+      - no-store
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers: {}
+    body:
+      encoding: UTF-8
+      string: body here
+    http_version: 
+  recorded_at: Thu, 02 Jul 2015 05:17:58 GMT
+recorded_with: VCR 2.9.3

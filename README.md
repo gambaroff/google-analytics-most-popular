@@ -104,7 +104,7 @@ end
 
 ### Optional Arguments
 
-trending_stories method can take a Hash of  any of these *date: :today*, *date: :last_day*, *date: :last_week* and *num_results: 10*
+trending_stories method can take a Hash of  any of these *date: :today*, *date: :last_day*, *date: :last_week*, *num_results: 10*, filter: 'my_filter'
 
 for example
 

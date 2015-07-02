@@ -1,12 +1,8 @@
 language: ruby
+sudo: false
 cache: bundler
 rvm:
-- 1.9.3
 - 2.1.5
 - 2.2.2
+- 2.2.2p95
 - jruby
-before_install:
-- gem install  dotenv
-- gem update --system
-- gem --version
-- gem update bundler

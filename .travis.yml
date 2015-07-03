@@ -6,9 +6,5 @@ rvm:
 - 2.2.2
 - jruby
 before_install:
-- gem update --system
-- gem --version
-- gem update bundler
-env:
-  matrix:
-    secure: CArfLsymacGVZv0QIlTpzXp2be31qI2Y7UMQcaKczS5KBONwKyUd9anyFbSudz7hleQv8byu2qDsNVyH7SICYtR+d2CFMCMwwXDWnNPJXbVKsDD/F3vKiY2V9XUcjbI4EbvsYQMr73rnhI9vPXPZAvRjuTNiK/uS0hHgw6q7AkFon1jHwlJqXPKnIEaSwL+bNdDIng2/GtKnBd0cRZj8JF6xSR7fNra3cVXZAE8/d79ihFacvtHerku8XxwWIwp5+ZmsTBhEjj6f7qD0JqELfgITn1lUSGjHqWTHZybr9tUqQfNCkk+xqL4/eg1flSXjPGHa4awJfFbNPGc2m1QiGaU+pgiH2fjYUQMXbOiVvRgZee6nk7Wvqg0vIsEUuC9zsH33TlavkCNJA+F+ExCbVwnEcbLdLEGj5aXXxM9hAKmgGLkldnsURSI8I44CSsmAi1QCp3YJWk33gnGgXiwm6anpCMCCcengwgxpqSaSepmVOGcRMsdgqJYkfS+joJJLASjfLoJaUlYId9wTbLPYTD8mjELj0aGsVpbOEkP6YtbagvDRpOB6pAr0PEq0vMKNE2OP/iR6M9pbMd5UM7k/MVephENdRxjA5OXdP+JW30/jELqEmohaBnH3OSeGfgOim02gm9Ikn6PJ9fii1hlkv/ZPpBE1JqntLv/QSbwVKt4=
+- brew update
+- brew upgrade openssl

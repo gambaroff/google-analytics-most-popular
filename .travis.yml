@@ -6,6 +6,11 @@ rvm:
   - 2.2.2
   - jruby
 before_install:
+<<<<<<< HEAD
   - gem update --system
   - gem --version
   - gem update bundler
+=======
+- brew update
+- brew upgrade openssl
+>>>>>>> 9baa6677a4fbc15667ea0246592dd68672e1cf61

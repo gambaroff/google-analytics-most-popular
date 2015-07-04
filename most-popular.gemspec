@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Google Analytics Most popular}
   spec.description   = %q{Authorizes server to server account and returns X number of most viewed pages by path}
-  spec.homepage      = "TOD0: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/gambaroff/google-analytics-most-popular"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/gambaroff/google-analytics-most-popular.svg?branch=master)](https://travis-ci.org/gambaroff/google-analytics-most-popular)
 # most_popular
 
 Add this line to your application's Gemfile:

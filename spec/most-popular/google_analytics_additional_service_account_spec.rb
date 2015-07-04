@@ -25,21 +25,21 @@ describe MostPopular::Analytics::GoogleAnalytics do
     }
       describe '#client' do
         it 'privately contains YourClassical user agent' do
-          VCR.use_cassette('google_analytics_additional_app', :record => :all) do
+          VCR.use_cassette('google_analytics_additional_app') do
             expect(analytics.instance_eval("@client").user_agent).to include "YourClassical/1.0.0 google-api-ruby-client/0.8.6"
         end
       end
 
       describe '#summarize' do
         it 'summarizes the service with options' do
-          VCR.use_cassette('with_options_additional_app', :record => :all) do
+          VCR.use_cassette('with_options_additional_app') do
             expect(analytics.summarize({num_results: 15}).class).to eq Array
             expect(analytics.summarize({num_results: 15}).size).to eq 15
           end
         end
 
         it 'summarizes the service without options' do
-          VCR.use_cassette('without_options_additional_app', :record => :all) do
+          VCR.use_cassette('without_options_additional_app') do
             expect(analytics.summarize.class).to eq Array
             expect(analytics.summarize.size).to eq 10
             expect(analytics.summarize.first.class).to eq Array

@@ -8,5 +8,4 @@
 /spec/reports/
 /tmp/
 .env
-lib/most-popular/config/your-classical/YourClassical-2bdbc68098d7.p12
-lib/most-popular/config/marketplace/Marketplace-5eae1f52d9cf.p12
+lib/most-popular/config/*

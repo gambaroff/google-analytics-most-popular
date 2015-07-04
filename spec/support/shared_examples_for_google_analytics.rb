@@ -22,13 +22,13 @@ shared_examples 'google_analytics' do
   }
 
   it 'is built with the correct methods and appropriately hides variables' do
-    VCR.use_cassette('shared_1', :record => :all) do
+    VCR.use_cassette('shared_1_erb') do
       expect(analytics.methods).to include :summarize
     end
   end
 
   it 'returns an array of stories when date argument is passed' do
-    VCR.use_cassette('shared', :record => :all) do
+    VCR.use_cassette('shared erb') do
       expect(analytics.summarize(start_date: '2014-12-13', end_date: '2015-01-01' ).class).to eq Array
     end
   end

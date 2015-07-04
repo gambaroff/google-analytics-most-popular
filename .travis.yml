@@ -5,9 +5,6 @@ rvm:
   - 2.2.2
   - jruby
 before_install:
-  - mkdir -p lib/most-popular/config
-  - echo $TEST_FILE1 > lib/most-popular/config/Test-5eae1f52d9cf.p12
-  - echo $TEST_FILE2 > lib/most-popular/config/Test2-2bdbc68098d7.p12
   - gem update --system
   - gem --version
   - gem update bundler

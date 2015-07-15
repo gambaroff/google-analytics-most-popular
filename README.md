@@ -141,3 +141,17 @@ RSpec.describe MostPopularStory do
   end
 end
 ```
+## Contributing
+
+Pull requests are welcome.
+
+To contribute to Google Analytics Most Popular:
+
+1. Fork the repo.
+2. Make your changes in a topic branch.
+3. Send a PR.
+
+Notes:
+
+* Contributions without tests won't be accepted.
+* Please don't update the Gem version.

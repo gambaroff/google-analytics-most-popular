@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/gambaroff/google-analytics-most-popular.svg?branch=master)](https://travis-ci.org/gambaroff/google-analytics-most-popular)
-# most_popular
+# Google analytics most_popular
+Authorizes server to server account and returns X number of most viewed pages by path and any of these *date: :today*, *date: :last_day*, *date: :last_week*, *num_results: 10*, filter: 'my_filter'
 
 Add this line to your application's Gemfile:
 
@@ -105,7 +106,7 @@ end
 
 ### Optional Arguments
 
-trending_stories method can take a Hash of  any of these *date: :today*, *date: :last_day*, *date: :last_week*, *num_results: 10*, filter: 'my_filter'
+trending_stories method can take a Hash of any of these *date: :today*, *date: :last_day*, *date: :last_week*, *num_results: 10*, filter: 'my_filter'
 
 for example
 
